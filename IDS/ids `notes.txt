@@ -1,0 +1,28 @@
+18 April 2023
+Installation
+
+Programming with R
+
+Basic Data Types
+
+Data types play a vitol role in developing any application and the data becomes very important especially in Statistical Analysis
+
+"Fundamental Data Types in Ralso called as Atomic Vector Types Ruses function named class to determine the type of a variable. "Function class(TRUE) returns logical. "Class(NA) returns logic NA denotes none.
+
+is.numeric(2)
+
+True
+
+is
+
+VECTORS (Important)
+
+Vectors are the most basic R data objects. A vector is a sequencee of data elements of the same data type. There are six types of atomc vectors logical, integer, double,complex,character, and raw Programmers can create character vetors numeric vectors, Logical vectors and many more.
+
+CREATING AND NAMING VECTORS
+
+"A Function co is used to create a vector in R which further allows users to combine values into a vector Rallows programmers to name the data elements of the vectors R
+
+cards-c ("Spade-11, Heart-12,Clubs"-11, "Diamonds"=13)
+
+cards

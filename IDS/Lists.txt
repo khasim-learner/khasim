@@ -1,0 +1,103 @@
+#Chapter 3 Lists
+#Contents
+#Creating a list
+#Accessing and mainpulating list elements
+#merging lists
+#converting lists to vectors
+
+list_data<-list("Red","Green",c(21,22),TRUE,51.23)
+> list_data
+
+OUTPUT:
+
+[[1]]
+[1] "Red"
+
+[[2]]
+[1] "Green"
+
+[[3]]
+[1] 21 22
+
+[[4]]
+[1] TRUE
+
+[[5]]
+[1] 51.23
+
+list_data[3]
+[[1]]
+[1] 21 22
+
+Creating a named list
+Lists in R have a special property wherein names can be assigned to the previsouly defined set of data
+
+Write a command on R creating a list containg vector, matrix, and a list
+list1<-list(c(1,2,3),matrix(1:9,nrow=3),list("HI",100))
+> list1
+[[1]]
+[1] 1 2 3
+
+[[2]]
+     [,1] [,2] [,3]
+[1,]    1    4    7
+[2,]    2    5    8
+[3,]    3    6    9
+
+[[3]]
+[[3]][[1]]
+[1] "HI"
+
+[[3]][[2]]
+[1] 100
+
+
+> names(list1)<-c("vector","matrix","listinlist") Giving names to the ele of the list
+> list1
+$vector
+[1] 1 2 3
+
+$matrix
+     [,1] [,2] [,3]
+[1,]    1    4    7
+[2,]    2    5    8
+[3,]    3    6    9
+
+$listinlist
+$listinlist[[1]]
+[1] "HI"
+
+$listinlist[[2]]
+[1] 100
+
+Merging the lists
+l1<-list("hi",100)
+> l2<-list("Hello",99)
+> l3<-c(l1,l2)
+> l3
+[[1]]
+[1] "hi"
+
+[[2]]
+[1] 100
+
+[[3]]
+[1] "Hello"
+
+[[4]]
+[1] 99
+
+Accessing the list of the elements
+l3[1]
+[[1]]
+[1] "hi"
+
+> l3[3]
+[[1]]
+[1] "Hello"
+
+Mipulating the list of elements
+Addition, deletion and updating operatiojns can be done on the list to manipulate
+ele can be added or deleted at the end of the list
+update operation can be performed on any element in list of irrespective of its position
+
